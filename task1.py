@@ -78,19 +78,19 @@ for bits in digest_sizes:
 
 
 bits, attempts, times = zip(*results)
+print(zip(bits, attempts))
+# plt.figure(figsize=(12, 6))
+# plt.subplot(1, 2, 1)
+# plt.plot(bits, attempts, marker='o')
+# plt.title('Number of Inputs vs Digest Size')
+# plt.xlabel('Digest Size (bits)')
+# plt.ylabel('Number of Inputs')
 
-plt.figure(figsize=(12, 6))
-plt.subplot(1, 2, 1)
-plt.plot(bits, attempts, marker='o')
-plt.title('Number of Inputs vs Digest Size')
-plt.xlabel('Digest Size (bits)')
-plt.ylabel('Number of Inputs')
+# plt.subplot(1, 2, 2)
+# plt.plot(bits, times, marker='o')
+# plt.title('Time Taken vs Digest Size')
+# plt.xlabel('Digest Size (bits)')
+# plt.ylabel('Time Taken (seconds)')
 
-plt.subplot(1, 2, 2)
-plt.plot(bits, times, marker='o')
-plt.title('Time Taken vs Digest Size')
-plt.xlabel('Digest Size (bits)')
-plt.ylabel('Time Taken (seconds)')
-
-plt.tight_layout()
-plt.show()
+# plt.tight_layout()
+# plt.show()
